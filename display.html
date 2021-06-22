@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: mediumaquamarine;">
+
+    <div class="container" align="center" style="margin-top: 50px; background-color: mediumaquamarine;">
+        <h1 class="text-center" style="color: blueviolet" >Student Details</h1>
+        <br>
+        <table class="table table-striped" border="2px">
+            <thead>
+                <th>ID</th>
+                <th>Student Name</th>
+                <th>RollNo</th>
+                <th>Student Class</th>
+                <th>Student Age</th>
+                <th>Student Marks</th>
+                <th>Student Attendance</th>
+                
+                
+    
+            </thead>
+            {% for i in Student_list %}
+            <tr>
+                <td><h5>{{i.id}}</h5></td>
+                <td><h4>{{i.student_name}}</h4></td>
+                <td><h4>{{i.rollnumber}}</h4></td>
+                <td><h4>{{i.student_class}}</h4></td>
+                <td><h4>{{i.student_age}}</h4></td>
+                <td><h4>{{i.student_marks}}</h4></td>
+                <td><h4>{{i.student_attendance}}</h4></td>
+                
+                
+                
+            </tr>
+            {% endfor %}
+        </table>
+        </div>
+
+
+</body>
+</html>

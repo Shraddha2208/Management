@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form method = "post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <h3>RollNo: <input type = "text" name = "" id="" placeholder="Enter student id"><br></h34>
+          
+        <h4><input type = "submit" value = "submit"></h4>
+    {% for data in dataset %}
+    {{data}}
+    <hr>
+    {% endfor %}
+
+    </form>
+
+</body>
+</html>
